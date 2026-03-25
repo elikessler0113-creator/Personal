@@ -1,96 +1,4 @@
-/* ==================================================================================
-   MIS 2201 PHASE 1: PERSONAL WEBSITE STYLESHEET
-   ==================================================================================
-   
-   FILE: style.css
-   PURPOSE: Main stylesheet for your personal portfolio website
-   
-   WHAT THIS FILE DOES:
-   - Controls all visual styling (colors, fonts, layouts, spacing)
-   - Makes your website responsive (looks good on phones, tablets, desktops)
-   - Creates animations and interactive effects
-   - Ensures consistent design across all pages
-   
-   ================================================================================== 
-   
-   CSS BASICS FOR STUDENTS
-   ==================================================================================
-   
-   CSS (Cascading Style Sheets) controls how your HTML looks. It uses "selectors"
-   to target HTML elements and apply styles to them.
-   
-   ANATOMY OF A CSS RULE:
-   ```
-   selector {
-       property: value;
-       another-property: another-value;
-   }
-   ```
-   
-   EXAMPLE:
-   ```
-   h1 {
-       color: red;
-       font-size: 24px;
-   }
-   ```
-   This makes all <h1> headings red and 24 pixels tall.
-   
-   ================================================================================== 
-   
-   CUSTOMIZING THIS STYLESHEET
-   ==================================================================================
-   
-   YOU DON'T NEED TO MODIFY THIS FILE TO COMPLETE THE PROJECT!
-   
-   However, if you want to customize your website's appearance, here are the
-   easiest ways to do it:
-   
-   1. CHANGE COLORS (See CSS Variables section below)
-      - Scroll down to :root { } section
-      - Change the color values
-      - Example: Change --primary-color from #7a0019 to #ff0000 for red
-   
-   2. CHANGE FONTS
-      - Find the --font-primary and --font-heading variables
-      - Replace with different font families
-      - Example: --font-primary: 'Arial', sans-serif;
-   
-   3. ADJUST SPACING
-      - Modify the --spacing variables to make things closer or further apart
-   
-   4. CHANGE BORDER RADIUS
-      - Adjust --radius variables to make corners more or less rounded
-   
-   Make changes carefully and test in your browser after each change!
-   
-   ================================================================================== 
-   
-   CSS VARIABLES (Custom Properties)
-   ==================================================================================
-   
-   CSS Variables let you define values once and reuse them throughout the file.
-   This makes it easy to change colors, fonts, or spacing in one place.
-   
-   HOW TO USE:
-   - Define: --variable-name: value; (in :root)
-   - Use: var(--variable-name) anywhere in the file
-   
-   EXAMPLE:
-   ```
-   :root {
-       --my-color: blue;
-   }
-   
-   h1 {
-       color: var(--my-color);  (h1 will be blue)
-   }
-   ```
-   
-   TIP: Change the values below to customize your entire website's look!
 
-==================================================================================*/
-/* HR break code*/
 
 hr {
    border: none;
@@ -99,53 +7,52 @@ hr {
 }
 
 .header-logo {
-    max-width: 200px; /* Adjust this number to make it bigger or smaller */
+    max-width: 200px; 
     height: auto;
 }
-/* ===== CSS VARIABLES ===== */
+
 :root {
-    /* Colors - Customize these! */
+
     --primary-color: #2e135a;
-    /* UMD Maroon */
+  
     --secondary-color: #3a6536;
-    /* UMD Gold */
+   
     --accent-color: #ff00dd;
-    /* Blue accent */
+   
     --text-primary: #ffffff;
-    /* Dark gray */
+   
     --text-secondary: #ffffff;
-    /* Medium gray */
+   
     --background: #000000;
-    /* White */
+
     --background-light: #413c3c;
-    /* Light gray */
+    
     --border-color: #2f007a;
-    /* Border gray */
+
     --link-hover: #c27ba0;
 
-    /* Fonts */
+   
     --font-primary: 'Georgia', Tahoma, Geneva, Verdana, sans-serif;
     --font-heading: 'Georgia', serif;
 
-    /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
 
-    /* Border Radius */
+   
     --radius-sm: 0.25rem;
     --radius-md: 0.5rem;
     --radius-lg: 1rem;
 
-    /* Shadows */
+    
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== RESET & BASE STYLES ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -169,7 +76,7 @@ body {
     padding: 0 var(--spacing-sm);
 }
 
-/* ===== TYPOGRAPHY ===== */
+
 h1,
 h2,
 h3,
@@ -210,7 +117,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===== NAVIGATION ===== */
+
 .navbar {
     background-color: var(--primary-color);
     color: white;
@@ -253,7 +160,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* Hamburger Menu (Mobile) */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -268,7 +175,7 @@ a:hover {
     transition: 0.3s;
 }
 
-/* ===== HERO SECTION ===== */
+
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     color: white;
@@ -302,7 +209,7 @@ a:hover {
     margin: 0 auto;
 }
 
-/* ===== SECTIONS ===== */
+
 section {
     padding: var(--spacing-xl) 0;
 }
@@ -327,7 +234,7 @@ section:nth-child(even) {
     opacity: 0.9;
 }
 
-/* ===== BUTTONS ===== */
+
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -375,7 +282,7 @@ section:nth-child(even) {
     
 }
 
-/* ===== GRIDS ===== */
+
 .hobby-grid,
 .highlights-grid,
 .reasons-grid,
@@ -387,7 +294,7 @@ section:nth-child(even) {
     margin-top: var(--spacing-md);
 }
 
-/* ===== CARDS ===== */
+
 .hobby-card,
 .reason-card,
 .highlight-item,
@@ -429,11 +336,11 @@ section:nth-child(even) {
     margin-bottom: var(--spacing-sm);
 }
 
-/* ===== VIDEO CONTAINERS ===== */
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
+  
     height: 0;
     overflow: hidden;
     max-width: 800px;
@@ -451,7 +358,7 @@ section:nth-child(even) {
     height: 100%;
 }
 
-/* ===== RESUME SPECIFIC ===== */
+
 .resume-section {
     margin-bottom: var(--spacing-lg);
 }
@@ -501,34 +408,8 @@ section:nth-child(even) {
     border-radius: var(--radius-md);
 }
 
-/* ===== COMPANIES (About Page) ===== */
-.company-card {
-    margin-bottom: var(--spacing-md);
-}
 
-.company-header {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
-}
 
-.company-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.company-details h4 {
-    margin-top: var(--spacing-md);
-    color: var(--primary-color);
-}
-
-.company-details ul {
-    margin-left: var(--spacing-md);
-}
-
-/* ===== HOBBY DETAILS (About Page) ===== */
 .hobby-detail {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-lg);
@@ -553,27 +434,8 @@ section:nth-child(even) {
     border-radius: var(--radius-md);
 }
 
-/* ===== UMD FACTS ===== */
-.facts-grid {
-    text-align: center;
-}
 
-.fact {
-    padding: var(--spacing-md);
-}
 
-.fact-number {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.fact-label {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-}
-
-/* ===== CTA SECTION ===== */
 .cta {
     background: var(--primary-color);
     text-align: center;
@@ -594,7 +456,7 @@ section:nth-child(even) {
     
 }
 
-/* ===== FOOTER ===== */
+
 footer {
       background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     color: #ededed;
@@ -606,10 +468,10 @@ footer p {
     margin: 0.25rem 0;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+
 @media (max-width: 768px) {
 
-    /* Mobile navigation */
+   
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -631,7 +493,7 @@ footer p {
         display: flex;
     }
 
-    /* Typography adjustments */
+   
     h1 {
         font-size: 2rem;
     }
@@ -640,20 +502,20 @@ footer p {
         font-size: 1.75rem;
     }
 
-    /* Grid adjustments */
+
     .hobby-grid,
     .highlights-grid,
     .reasons-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Header adjustments */
+   
     .item-header {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    /* CTA buttons */
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
@@ -664,7 +526,7 @@ footer p {
     }
 }
 
-/* ===== UTILITY CLASSES ===== */
+
 .text-center {
     text-align: center;
 }
@@ -693,7 +555,7 @@ footer p {
     margin-bottom: var(--spacing-lg);
 }
 
-/* ===== ANIMATIONS ===== */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
