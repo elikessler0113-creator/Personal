@@ -1,27 +1,5 @@
 <!DOCTYPE html>
-<!-- ==================================================================================
-     MIS 2201 PHASE 1: PERSONAL WEBSITE - RESUME PAGE
-     ==================================================================================
-     
-     FILE: resume.html (RESUME PAGE)
-     DUE: March 20, 2026, 11:00 AM
-     POINTS: 5 pts (out of 22 pts for Required Pages Content)
-     
-     REQUIREMENTS FOR THIS PAGE:
-     ✓ Web-formatted version of your resume
-     ✓ Download button for PDF version
-     ✓ Education section
-     ✓ Experience section  
-     ✓ Skills and achievements
-     ✓ Professional formatting
-     
-     INSTRUCTIONS:
-     1. Format your resume for the web (HTML) - NOT just paste a Word document
-     2. Create a PDF version of your resume and save it in the assets/ folder
-     3. Include all standard resume sections
-     4. Keep formatting professional and clean
-     
-     ================================================================================== -->
+
 
 <html lang="en">
 
@@ -31,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Eli Kessler - Professional Resume">
 
-    <!-- ACTION REQUIRED: Replace [YOUR NAME] -->
+ 
     <title>Eli Kessler - Resume | Personal Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -39,7 +17,6 @@
 
 <body>
 
-    <!-- NAVIGATION - SAME ON ALL PAGES -->
     <nav class="navbar">
          
         <div class="container">
@@ -50,9 +27,10 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
                 <li><a href="resume.html" class="active">Resume</a></li>
-                <li><a href="discover-umd.html">Discover UMD</a></li>
+                <li><a href="about.html">About Me</a></li>
+             
+        
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -62,226 +40,96 @@
         </div>
     </nav>
 
-    <!-- =============================================================================
-         RESUME HEADER WITH PDF DOWNLOAD
-         =============================================================================
-         REQUIRED (Part of 5 pts for Resume Page):
-         - Download button for PDF version of resume
-         
-         PDF CREATION INSTRUCTIONS:
-         1. Create your resume in Microsoft Word, Google Docs, or similar
-         2. Export/Save as PDF format
-         3. Name it professionally: "YourName-Resume.pdf" (e.g., "Sarah-Johnson-Resume.pdf")
-         4. Save the PDF file in the assets/ folder
-         5. Update the href link below to match your filename
-         
-         FILE FORMAT:
-         - Must be PDF (not .doc, .docx, or other formats)
-         - Keep file size under 2MB (compress if needed)
-         - Ensure PDF is readable and professional
-         
-         WHY PDF?
-         - Universal format, opens on any device
-         - Preserves formatting exactly as you designed it
-         - Professional standard for resume submissions
-         - Easy for employers to print or save
-         ============================================================================= -->
+   
     <header class="page-header resume-header">
         <div class="container">
             <h1>Resume</h1>
             <p>View my resume and download a PDF copy</p>
 
-            <!-- PDF DOWNLOAD BUTTON - ACTION REQUIRED -->
             <a href="assets/Eli Kessler - Resume.pdf" target="_blank" rel="noopener noreferer" download class="btn btn-download">
                 Download PDF Resume
             </a>
-            <!-- ^^^ REPLACE:
-                 Change href="assets/sample-resume.pdf" to YOUR PDF filename
-                 Example: href="assets/John-Smith-Resume.pdf"
-                 STUDENT EDIT - Opens the PDF in a new tab, leaving the website open
-                 
-                 The "download" attribute makes it download instead of opening in browser
-             -->
+           
         </div>
     </header>
 
-    <!-- =============================================================================
-         WEB-FORMATTED RESUME CONTENT
-         =============================================================================
-         REQUIRED (Part of 5 pts for Resume Page):
-         - Web-formatted version (not just an image of your resume)
-         - Professional formatting
-         - All standard resume sections
-         
-         IMPORTANT: This is NOT copying/pasting from Word!
-         You need to format it properly with HTML semantic elements.
-         
-         STANDARD RESUME SECTIONS TO INCLUDE:
-         ✓ Contact Information
-         ✓ Education
-         ✓ Work Experience  
-         ✓ Skills
-         ✓ Projects (optional but recommended)
-         ✓ Leadership/Activities (optional)
-         ✓ Certifications (if applicable)
-         
-         TIPS FOR A STRONG RESUME:
-         - Use action verbs (Developed, Managed, Created, Analyzed, etc.)
-         - Quantify achievements when possible (Increased sales by 20%, Managed team of 5, etc.)
-         - Tailor to your target industry/roles
-         - Keep it concise - aim for 1 page
-         - No typos or grammatical errors!
-         ============================================================================= -->
+   
     <section class="resume-content">
         <div class="container">
 
-            <!-- =================================================================
-                 CONTACT INFORMATION
-                 ================================================================= -->
+           
             <div class="resume-section contact-info">
-                <!-- ACTION REQUIRED: Replace with YOUR information -->
+             
                 <h2>Eli Kessler</h2>
                 <p class="job-title">Business Management Student at University of Minnesota Duluth</p>
 
                 <div class="contact-details">
                     <p> UMD Email: <a href="mailto:kessl332@umn.edu">kessl332@umn.edu</a></p>
                     <p>Personal Email: <a href="mailto:ekessler1306@gmail.com">ekessler1306@gmail.com</a></p>
-                    <!-- ^^^ REPLACE with your email -->
-
+                   
                     <p>Phone: (952) 215-9145</p>
-                    <!-- ^^^ REPLACE with your phone number -->
+               
 
                     <p>Location: Duluth, MN</p>
-                    <!-- ^^^ REPLACE with your location (can be general like "Duluth, MN" or "Greater Minneapolis Area") -->
+                   
                     <p>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/kesslere"> My Linkedin</a></p>
                     <p><script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="eli-kessler-6a3564337" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/eli-kessler-6a3564337?trk=profile-badge"></a></div>
-                    <!-- ^^^ REPLACE with your LinkedIn profile (optional but professional)
-                         If you don't have LinkedIn, you can delete this line or add your GitHub instead
-                     -->
+                   
                     
                 </div>
             </div>
 <hr>
-            <!-- =================================================================
-                 EDUCATION SECTION
-                 =================================================================
-                 REQUIRED - All students should list their UMD education
-                 
-                 WHAT TO INCLUDE:
-                 - School name (University of Minnesota Duluth)
-                 - Degree you're pursuing (Bachelor of Science in [Your Major])
-                 - Expected graduation date
-                 - GPA (if 3.0 or higher - optional)
-                 - Relevant coursework (optional)
-                 - Honors/Awards (Dean's List, scholarships, etc.)
-                 ================================================================= -->
+            
             <div class="resume-section education">
                 <h2>Education</h2>
 
-                <!-- UMD Education - ACTION REQUIRED -->
+             
                 <div class="resume-item">
                     <div class="item-header">
                         <h3>University of Minnesota Duluth</h3>
                         <span class="date">Expected Graduation: May 2028</span>
-                        <!-- ^^^ REPLACE with your expected graduation date
-                             Example: "Expected Graduation: May 2027" or "Expected Graduation: December 2026"
-                         -->
+                        
                     </div>
                     <p class="degree">Bachelor of Business Administration in Business Management</p>
-                    <!-- ^^^ REPLACE with your actual major
-                         Examples: "Bachelor of Science in Management Information Systems"
-                                   "Bachelor of Business Administration in Finance"
-                                   "Bachelor of Science in Marketing"
-                     -->
+                   
+               
 
                     <p class="gpa">GPA: 3.66/4.0</p>
-                    <!-- ^^^ REPLACE with your GPA (optional - only include if 3.0 or higher)
-                         If GPA is below 3.0, you can delete this line - no problem!
-                     -->
-
-                    <!-- OPTIONAL: Relevant Coursework -->
+                 
                     <p class="coursework"><strong>Relevant Coursework:</strong> Advanced Spanish for Business, Management Information Systems, Organizational Behavior and Management, Business Law</p>
-                    <!-- ^^^ REPLACE with your relevant courses
-                         Examples: "Database Management, Web Development, Business Analytics, Project Management"
-                         This is optional - delete if you prefer not to include it
-                     -->
-
-                    <!-- OPTIONAL: Honors and Awards -->
+                  
                     <p class="honors"><strong>Honors:</strong> Dean's List (Fall 2024, Spring 2025, Fall 2025)</p>
-                    <!-- ^^^ REPLACE with your honors/awards, or delete if none yet (that's okay!) -->
+                  
                 </div>
 
-                <!-- OPTIONAL: Previous Education (High School, Community College, etc.) -->
-                <!-- Typically you don't need to list high school once in college, but you can if space permits -->
-                <!--
-                <div class="resume-item">
-                    <div class="item-header">
-                        <h3>[Previous School Name]</h3>
-                        <span class="date">[Graduation Date]</span>
-                    </div>
-                    <p>[Degree/Diploma], [Additional Details]</p>
-                </div>
-                -->
+            
             </div>
 <hr>
-            <!-- =================================================================
-                 WORK EXPERIENCE SECTION
-                 =================================================================
-                 REQUIRED - List your work experience (jobs, internships)
-                 
-                 DON'T HAVE MUCH EXPERIENCE YET? That's okay!
-                 - Include part-time jobs (retail, food service, etc.)
-                 - Include internships (even unpaid)
-                 - Include volunteer work
-                 - Focus on transferable skills
-                 
-                 FORMAT FOR EACH JOB:
-                 - Job Title
-                 - Company Name
-                 - Dates (Month Year - Month Year)
-                 - 3-5 bullet points describing responsibilities and achievements
-                 
-                 WRITING GOOD BULLET POINTS:
-                 - Start with action verbs (Managed, Developed, Assisted, Created, Analyzed)
-                 - Quantify when possible (numbers, percentages, amounts)
-                 - Focus on results and achievements, not just duties
-                 - Relate to skills employers want
-                 
-                 EXAMPLES:
-                 ✓ GOOD: "Increased customer satisfaction scores by 15% through improved service protocols"
-                 ✗ BAD: "Helped customers"
-                 ✓ GOOD: "Managed inventory system tracking 500+ products valued at $50,000"
-                 ✗ BAD: "Did inventory"
-                 ================================================================= -->
+            
             <div class="resume-section experience">
                 <h2>Professional Experience</h2>
 
-                <!-- JOB #1 - ACTION REQUIRED -->
                 <div class="resume-item">
                     <div class="item-header">
                         <h3>Barista</h3>
                         <span class="date">June 2025 - Present</span>
-                        <!-- ^^^ REPLACE with dates. Use "Present" if you still work there.
-                             Example: "June 2023 - Present" or "May 2022 - August 2023"
-                         -->
+                       
                     </div>
                     <p class="company">Starbucks | Duluth, MN</p>
-                    <!-- ^^^ REPLACE with company name and location -->
+             
 
                     <ul class="responsibilities">
                         <li>Craft beverages and engage with customers</li>
-                        <!-- ^^^ REPLACE with YOUR accomplishments
-                             Example: "Managed daily operations of retail store serving 200+ customers per day"
-                         -->
+                  
                         <li>Take orders and manage payment</li>
                         <li>Promote positive customer interactions</li>
                         <li>Ensure food safety through cleaning routines and attention to detail</li>
-                        <!-- TIP: 3-5 bullet points per job is ideal -->
+                      
                     </ul>
                
 
-                <!-- JOB #2 (if applicable) - ACTION REQUIRED -->
+           
                 <div class="resume-item">
                     <div class="item-header">
                         <h3>Tech Consultant</h3>
@@ -295,62 +143,29 @@
                     </ul>
                 </div>
 
-                <!-- ADD MORE JOBS AS NEEDED - Copy/paste the above structure -->
-
-                <!-- IF YOU DON'T HAVE WORK EXPERIENCE YET:
-                     Replace "Professional Experience" with "Experience" and include:
-                     - Volunteer work
-                     - School projects
-                     - Leadership roles in clubs/organizations
-                     - Personal projects
-                     Example: "Class Project Manager - MIS 2201 Semester Project"
-                 -->
             </div>
 
-            <!-- =================================================================
-                 SKILLS SECTION
-                 =================================================================
-                 REQUIRED - Showcase your technical and professional skills
-                 
-                 GROUP YOUR SKILLS BY CATEGORY:
-                 - Technical Skills (software, programming languages, tools)
-                 - Business Skills (project management, data analysis, etc.)
-                 - Soft Skills (communication, teamwork, problem-solving)
-                 
-                 BE HONEST - Only list skills you actually have!
-                 Employers may test you on these in interviews.
-                 
-                 RELEVANT SKILLS FOR MIS STUDENTS:
-                 - From this class: HTML, CSS, JavaScript
-                 - Other coursework: SQL, Excel, PowerPoint, Word
-                 - Software: Microsoft Office, Google Workspace
-                 - Analytics: Data visualization, report writing
-                 - Soft skills: Communication, teamwork, time management
-                 ================================================================= -->
+           
             <div class="resume-section skills">
                 <h2>Skills & Languages</h2>
 
-                <!-- TECHNICAL SKILLS - ACTION REQUIRED -->
                 <div class="skill-category">
                     <h3>Technical Skills</h3>
                     <ul>
                         <li><strong>Web Development:</strong> HTML, CSS</li>
-                        <!-- ^^^ You learned these in MIS 2201 - definitely include! -->
-
-                    
-                        <!-- ^^^ REPLACE with languages you've learned. If none yet, delete this line. -->
+                     
 
                         <li><strong>Software:</strong> Microsoft Office, Google
                             Workspace</li>
-                        <!-- ^^^ REPLACE with software you're proficient in -->
+                    
 
                         <li><strong>Tools:</strong> VS Code, Codecademy</li>
                          <li><strong>Cybersecurity:</strong> This website is protected from bots and hackers with cloudflare.</li>
-                        <!-- ^^^ REPLACE with developer tools you've used -->
+                     
                     </ul>
                 </div>
 <br>
-                <!-- BUSINESS/PROFESSIONAL SKILLS - ACTION REQUIRED -->
+             
                 <div class="skill-category">
                     <h3>Professional Skills</h3>
                     <ul>
@@ -361,9 +176,7 @@
                         <li>Time Management & Meeting Deadlines</li>
                         <li>Product security and loss prevention</li>
                        
-                        <!-- ^^^ REPLACE/MODIFY based on YOUR strengths
-                             These are examples - pick the ones that truly represent you
-                         -->
+                       
                     </ul>
                 </div>
                  <br>
@@ -372,40 +185,21 @@
                <div class="skill-category">
                     <h3>Languages</h3>
                     <ul>
-                        <li> English - Native</li>
-                         <li> Spanish - Fluent</li>
+                        <li> <strong>English</strong> - Native</li>
+                         <li> <strong>Spanish</strong>Spanish - Fluent</li>
                        
-                        <!-- ^^^ REPLACE/MODIFY based on YOUR strengths
-                             These are examples - pick the ones that truly represent you
-                         -->
+                       
                     </ul>
                 </div>
             </div>
         </div>
              <hr>
 
-            <!-- =================================================================
-                 PROJECTS SECTION (OPTIONAL but highly recommended!)
-                 =================================================================
-                 Including projects shows initiative and practical application of skills
-                 
-                 WHAT TO INCLUDE:
-                 - This website you're building!
-                 - Class projects that demonstrate skills
-                 - Personal projects
-                 - Hackathon projects
-                 - Open source contributions
-                 
-                 FOR EACH PROJECT:
-                 - Project name
-                 - Brief description (1-2 sentences)
-                 - Technologies used
-                 - Outcome/result (optional: link to live project)
-                 ================================================================= -->
+            
             <div class="resume-section projects">
                 <h2>Projects</h2>
 
-                <!-- THIS WEBSITE - Definitely include it! -->
+              
                 <div class="resume-item">
                     <div class="item-header">
                         <h3>Personal Portfolio Website</h3>
@@ -415,10 +209,10 @@
                         interests.
                         Utilized HTML5, CSS3, and JavaScript to create a responsive, mobile-friendly site.</p>
                     <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Github</p>
-                    <!-- ^^^ You can customize this, but definitely include this project! It's proof of your work. -->
+                   
                 
 
-                <!-- OTHER PROJECTS - ACTION REQUIRED -->
+              
                 <div class="resume-item">
                     <div class="item-header">
                         <h3>Middle School Outreach</h3>
@@ -428,15 +222,8 @@
                    
                 
 
-                <!-- ADD MORE PROJECTS as needed - or delete this section if you only have the website -->
             </div>
 
-            <!-- =================================================================
-                 LEADERSHIP & ACTIVITIES (OPTIONAL)
-                 =================================================================
-                 Shows you're well-rounded and engaged
-                 Include: clubs, student organizations, volunteer work, athletics
-                 ================================================================= -->
             <div class="resume-section activities">
                 <h2>Community Leadership Experience</h2>
 
@@ -471,37 +258,21 @@
                 </div>
             </div>
 
-                <!-- EXAMPLES:
-                     - "LSBE Student Association - Member, Fall 2024-Present"
-                     - "Campus Volunteer Program - Volunteer Tutor, Spring 2025"
-                     - "Intramural Basketball - Team Captain, 2024-2025"
-                     
-                     Delete this entire section if you don't have activities yet - that's okay!
-                 -->
+               
            <br>
 
-            <!-- =================================================================
-                 CERTIFICATIONS (OPTIONAL)
-                 =================================================================
-                 Include professional certifications, licenses, online course completions
-                 
-                 EXAMPLES:
-                 - Codecademy HTML & CSS Certifications (from this class!)
-                 - Google Analytics Certification
-                 - Microsoft Office Specialist
-                 - First Aid/CPR (if relevant to target jobs)
-                 ================================================================= -->
+           
             <div class="resume-section certifications">
                 <h2>Certifications</h2>
                 <ul>
                     <li>Codecademy HTML Fundamentals - February 2026</li>
                     <li>Codecademy Learn CSS - February 2026</li>
-                    <!-- ^^^ You completed these for this class - include them! -->
+                  
 
                     <li>Platinum Bilingual Seal - June 2024</li>
-                    <!-- ^^^ Add any other certifications or delete if none -->
+                   
                 </ul>
-                <!-- Delete entire section if you don't have certifications other than Codecademy -->
+          
             </div>
 
         </div>
@@ -519,41 +290,3 @@
 </body>
 
 </html>
-
-<!-- ==================================================================================
-     SUBMISSION CHECKLIST FOR resume.html (Resume Page)
-     ==================================================================================
-     
-     Before submitting, verify YOU HAVE:
-     ✓ Created a PDF version of your resume and saved it in assets/ folder
-     ✓ Updated PDF download button with correct filename
-     ✓ Filled in ALL resume sections with YOUR information
-     ✓ Contact information (email, phone, LinkedIn)
-     ✓ Education section (UMD degree, expected graduation, GPA if 3.0+)
-     ✓ Work experience (at least one job/internship/volunteer role)
-     ✓ Skills section (technical and professional)
-     ✓ Included this website project in Projects section
-     ✓ Used action verbs and quantified achievements
-     ✓ Proofread for typos and grammar errors
-     ✓ Professional formatting maintained
-     ✓ Tested PDF download button works
-     ✓ Page looks good on desktop and mobile
-     
-     GRADING: This page is worth 5 points out of 22 total for Required Pages
-     
-     RESUME TIPS:
-     - Keep resume to ONE PAGE (employers spend 6-10 seconds scanning resumes)
-     - Use consistent formatting (same font sizes, spacing, bullet styles)
-     - Focus on achievements and results, not just job duties
-     - Tailor your resume to your target industry/roles
-     - No personal information (age, marital status, photo on resume itself)
-     - Save your PDF with a professional name: "FirstName-LastName-Resume.pdf"
-     
-     PDF FILE CHECK:
-     ✓ File is actually PDF format (not .doc or .docx)
-     ✓ File size is under 2MB
-     ✓ PDF is readable and properly formatted
-     ✓ PDF saved in assets/ folder
-     ✓ Filename is professional (FirstName-LastName-Resume.pdf)
-     
-     ================================================================================== -->
