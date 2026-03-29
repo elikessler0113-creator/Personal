@@ -613,7 +613,7 @@ footer p {
 
 .seal-image {
     width: 100%;
-    height: 350px;
+    height: 200px;
     display: block;
     box-shadow: 0 4px 10px var(--shadow-soft);
 }
