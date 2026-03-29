@@ -574,9 +574,9 @@ footer p {
 
 
 :root {
-    --bg-color: #000000;           
-    --accent-color: #ffffff;       
-    --description-color: #ffffff;  
+    --bg-color: #(000000;           
+    --accent-color: #(000000;       
+    --description-color: #(ffffff;  
     --shadow-soft: rgba(0, 0, 0, 0.1);
 }
 
@@ -592,7 +592,7 @@ footer p {
 }
 
 .seal-title {
-    color: var(--accent-color);
+    color: #(ffffff;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
