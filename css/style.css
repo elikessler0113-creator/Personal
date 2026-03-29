@@ -571,3 +571,79 @@ footer p {
 .fade-in {
     animation: fadeIn 0.6s ease-out;
 }
+
+/* --- COLOR CUSTOMIZATION VARIABLES --- */
+:root {
+    --bg-color: #ffffff;           /* Background of the section */
+    --accent-color: #2c3e50;       /* Title and bold text color */
+    --description-color: #4a4a4a;  /* Paragraph text color */
+    --border-color: #e0e0e0;       /* Optional border color */
+    --shadow-soft: rgba(0, 0, 0, 0.1);
+}
+
+/* --- LAYOUT STYLES --- */
+.seal-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+
+.seal-title {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.seal-flex-container {
+    display: flex;
+    align-items: center; /* Vertically aligns image and text */
+    justify-content: center;
+    gap: 40px;           /* Space between image and text */
+}
+
+.seal-image-wrapper {
+    flex: 0 0 200px;     /* Prevents image from shrinking or growing */
+}
+
+.seal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Remove the line below if you don't want a circular seal */
+    border-radius: 50%; 
+    box-shadow: 0 4px 10px var(--shadow-soft);
+}
+
+.seal-text-wrapper {
+    flex: 1;             /* Takes up the remaining horizontal space */
+}
+
+.seal-text-wrapper p {
+    color: var(--description-color);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.seal-text-wrapper strong {
+    color: var(--accent-color);
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 650px) {
+    .seal-flex-container {
+        flex-direction: column; /* Stacks image on top of text on mobile */
+        text-align: center;
+    }
+    
+    .seal-image-wrapper {
+        flex: 0 0 150px;       /* Smaller image for mobile */
+    }
+}
