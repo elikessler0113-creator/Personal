@@ -572,16 +572,15 @@ footer p {
     animation: fadeIn 0.6s ease-out;
 }
 
-/* --- COLOR CUSTOMIZATION VARIABLES --- */
+
 :root {
-    --bg-color: #ffffff;           /* Background of the section */
-    --accent-color: #2c3e50;       /* Title and bold text color */
-    --description-color: #4a4a4a;  /* Paragraph text color */
-    --border-color: #e0e0e0;       /* Optional border color */
+    --bg-color: #000000;           
+    --accent-color: #ffffff;       
+    --description-color: #ffffff;  
     --shadow-soft: rgba(0, 0, 0, 0.1);
 }
 
-/* --- LAYOUT STYLES --- */
+
 .seal-section {
     max-width: 900px;
     margin: 40px auto;
@@ -603,26 +602,24 @@ footer p {
 
 .seal-flex-container {
     display: flex;
-    align-items: center; /* Vertically aligns image and text */
+    align-items: center; 
     justify-content: center;
-    gap: 40px;           /* Space between image and text */
+    gap: 40px;    
 }
 
 .seal-image-wrapper {
-    flex: 0 0 200px;     /* Prevents image from shrinking or growing */
+    flex: 0 0 200px;     
 }
 
 .seal-image {
     width: 100%;
     height: auto;
     display: block;
-    /* Remove the line below if you don't want a circular seal */
-    border-radius: 50%; 
     box-shadow: 0 4px 10px var(--shadow-soft);
 }
 
 .seal-text-wrapper {
-    flex: 1;             /* Takes up the remaining horizontal space */
+    flex: 1;        
 }
 
 .seal-text-wrapper p {
@@ -636,10 +633,10 @@ footer p {
     color: var(--accent-color);
 }
 
-/* --- RESPONSIVENESS --- */
+
 @media (max-width: 650px) {
     .seal-flex-container {
-        flex-direction: column; /* Stacks image on top of text on mobile */
+        flex-direction: column; 
         text-align: center;
     }
     
