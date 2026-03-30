@@ -360,7 +360,7 @@ section:nth-child(even) {
 
 
 .resume-section {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .resume-item {
