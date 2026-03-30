@@ -571,52 +571,37 @@ footer p {
 .fade-in {
     animation: fadeIn 0.6s ease-out;
 }
-.bilingual-seal {
-    padding: 60px 0;
-    background-color: #000000;
-    text-align: center;
-}
-
-.bilingual-seal h2 {
-   text-alight: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
 .seal-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;      /* Side-by-side */
+    justify-content: center;  /* Centers the pair horizontally */
+    align-items: center;      /* Vertically aligns image and text */
+    gap: 40px;                /* Space between image and text */
+    width: 100%;              /* Uses available space */
+    max-width: 1000px;        /* Keeps content from getting too wide */
+    margin: 0 auto;           /* Centers the whole container on the page */
 }
 
 .seal-image {
-    width: 300px;
+    width: 350px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-shrink: 0;           /* Prevents the image from squishing */
 }
 
-.seal-content {
-  display: flex;
-  flex-direction: row;     /* Ensures items stay side-by-side */
-  justify-content: center; /* Centers items horizontally */
-  align-items: center;     /* Centers items vertically */
-  
-  width: 100vw;            /* Forces the width to 100% of the viewport */
-  height: 100vh;           /* Forces the height to 100% of the viewport */
-  margin: 0;               /* Removes any default browser spacing */
-  box-sizing: border-box;  /* Prevents padding from pushing the box over */
- 
+.seal-text {
+    color: white;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 500px;
 }
 
+/* Responsive fix for mobile */
 @media (max-width: 768px) {
-    .seal-image {
-        width: 250px;
+    .seal-content {
+        flex-direction: column; /* Stack vertically on small screens */
+        text-align: center;
     }
-    
-    .bilingual-seal h2 {
-        font-size: 2rem;
-    }
+}
 }
 
