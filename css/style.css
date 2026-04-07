@@ -12,25 +12,23 @@ hr {
 }
 
 :root {
-
-    --primary-color: #2e135a;
-  
-    --secondary-color: #3a6536;
-   
-    --accent-color: #ff00dd;
-   
-    --text-primary: #ffffff;
-   
-    --text-secondary: #ffffff;
-   
-    --background: #000000;
-
-    --background-light: #413c3c;
+    /* Main brand colors (now darker for contrast against light bg) */
+    --primary-color: #4b2c82;    /* Deep Purple */
+    --secondary-color: #1b3d18;  /* Forest Green */
+    --accent-color: #8e44ad;     /* Vibrant Purple accent */
     
-    --border-color: #2f007a;
-
-    --link-hover: #c27ba0;
-
+    /* Text colors (Dark for readability) */
+    --text-primary: #1a1a1a;     /* Near black */
+    --text-secondary: #4a4a4a;   /* Soft gray for subtext */
+    
+    /* Background colors */
+    --background: #ffffff;       /* Pure white or #fcfcfc */
+    --background-light: #f4f4f4; /* Light gray for sections/cards */
+    
+    /* Border and Interactive */
+    --border-color: #e0e0e0;     /* Subtle light border */
+    --link-hover: #2d5a27;       /* Darker green for hover states */
+}
    
     --font-primary: 'Georgia', Tahoma, Geneva, Verdana, sans-serif;
     --font-heading: 'Georgia', serif;
